@@ -1,8 +1,8 @@
 version: "3"
 services:
   web:
-    image: nszl/app
-    container_name: web
+    build: .
+    container_name: nszl/web
     depends_on:
           - sql
     ports :
